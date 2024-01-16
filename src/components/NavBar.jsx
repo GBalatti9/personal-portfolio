@@ -1,16 +1,17 @@
-import { Box,List} from '@mui/material';
+import { Box, Button, CardActionArea, CardActions, List} from '@mui/material';
 import { NavBarMobile } from './NavBarMobile';
 import { NavBarComputer } from './NavBarComputer';
+import { ThemeToggleBtn } from './ThemeToggleBtn';
 
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['About', 'Projects' , 'Contact'];
 
 export const NavBar = () => {
 
     return (
         <Box color="primary">
-            <List sx={{ display: { xs: 'none', sm: 'flex' } }}>
+            <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                 <NavBarComputer navItems={ navItems } />
-            </List>
+            </Box>
 
             <Box sx={{ display: {xs: 'flex', sm: 'none' }, justifyContent: 'space-between', px: 1 }}>
                 <NavBarMobile navItems={ navItems }/>
