@@ -42,7 +42,7 @@ export const NavBar = () => {
                 <Box sx={{ display: {xs: 'flex', sm: 'none' }, justifyContent: 'space-between', px: 1 }}>
                     <ThemeToggleBtn />
                     <IconButton onClick={ handleDrawerOpen }>
-                        <MenuIcon/>
+                        <MenuIcon sx={{ fontSize: '2rem' }}/>
                     </IconButton>
 
                     <Drawer anchor="right" open={isDrawerOpen} sx={{ opacity: '0.9' }}>
