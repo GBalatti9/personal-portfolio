@@ -20,8 +20,8 @@ export const NavBarComputer = ({ navItems }) => {
                 {
                     navItems.map(( item ) => (
                         <ListItem key={ item } disablePadding sx={{ width: 'fit-content' }}>
-                            <Link underline='none' color='inherit' sx={{ cursor: 'pointer' }}>
-                                <ListItemButton sx={{ borderRadius: '5px' }}>
+                            <Link underline='none' color='inherit' sx={{ cursor: 'pointer' }} href={`#${item.toLowerCase()}`} >
+                                <ListItemButton sx={{ borderRadius: '5px' }} >
                                     <ListItemText
                                         primaryTypographyProps={{fontSize: '20px'}} 
                                         >
