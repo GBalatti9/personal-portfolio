@@ -26,10 +26,10 @@ export const HomePage = () => {
             <Avatar
                 alt="Gaston Balatti"
                 src="/GastonCvImage.jpg"
-                sx={{ width: 200, height: 200 }} />
+                sx={{ width: 200, height: 200, border: `3px solid ${ theme.palette.primary.main }` }} />
             <Box sx={{ ml: 2 }}>
                 <Box>
-                    <Typography variant="h2" sx={{ fontSize: { xs: '3rem', sm: '4rem'} }}> Gaston Balatti</Typography>
+                    <Typography variant="h2" sx={{ fontSize: { xs: '3rem', sm: '4rem'} }}> Gastón Balatti</Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', ml: 1, justifyContent: { xs: 'center' } }}>
                         <Typography variant="h4" color="primary">
                             <Typewriter words={['Full-stack', 'Front-end', 'Back-end']} cursor loop={5}/>

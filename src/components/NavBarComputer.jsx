@@ -34,7 +34,7 @@ export const NavBarComputer = ({ navItems }) => {
                     }
                 </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                    <Button variant="contained" onClick={ handleDownloadPdf }>
+                    <Button variant="contained" onClick={ handleDownloadPdf } sx={{ width: '135px' }}>
                         Download CV
                     </Button>
                         <ThemeToggleBtn />
