@@ -6,14 +6,19 @@ const navItems = ['Home', 'About', 'Contact'];
 
 export const NavBar = () => {
     return (
-        <Box color="primary" sx={{ boxShadow: '1px 1px 1px black' }}>
+        <Box color="primary" sx={{ boxShadow: '1px 1px 1px rgba(secondary, 0.5)' }}>
             <List sx={{ display: 'flex' }}>
                     {
                     navItems.map(( item ) => (
                         <ListItem key={ item } disablePadding sx={{ display: 'flex', justifyContent: 'center' }}>
                             <Link underline='none' color='inherit' sx={{ cursor: 'pointer' }}>
-                                <ListItemText 
-                                    primary = { item }/>
+                                <ListItemButton sx={{ borderRadius: '5px' }}>
+                                    <ListItemText
+                                        primaryTypographyProps={{fontSize: '20px'}} 
+                                        >
+                                        { item }
+                                    </ListItemText>
+                                </ListItemButton>
                             </Link>
                         </ListItem>        
                         ))

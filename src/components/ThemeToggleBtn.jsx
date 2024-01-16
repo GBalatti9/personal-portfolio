@@ -12,7 +12,7 @@ export const ThemeToggleBtn = () => {
 
     return (
         <>
-        <IconButton sx={{ mr: 4 }} onClick={ toggleColorMode } color="inherit">
+        <IconButton sx={{ p: 2, mr: 2 }} onClick={ toggleColorMode } color="inherit">
             {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
         </IconButton>
         </>
