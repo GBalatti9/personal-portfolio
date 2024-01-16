@@ -17,15 +17,20 @@ export const HomePage = () => {
 ]
 
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+        <Box sx={{ 
+                display: { xs: 'flex'}, 
+                flexDirection: { xs: 'column', sm: 'row' },
+                justifyContent: { xs: 'center' }, 
+                alignItems: { xs: 'center' }, 
+                height: '90vh' }}>
             <Avatar
                 alt="Gaston Balatti"
                 src="/GastonCvImage.jpg"
                 sx={{ width: 200, height: 200 }} />
             <Box sx={{ ml: 2 }}>
                 <Box>
-                    <Typography variant="h2"> Gaston Balatti</Typography>
-                    <Box sx={{ display: 'flex', alignItems: 'center', ml: 1 }}>
+                    <Typography variant="h2" sx={{ fontSize: { xs: '3rem', sm: '4rem'} }}> Gaston Balatti</Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', ml: 1, justifyContent: { xs: 'center' } }}>
                         <Typography variant="h4" color="primary">
                             <Typewriter words={['Full-stack', 'Front-end', 'Back-end']} cursor loop={5}/>
                         </Typography>

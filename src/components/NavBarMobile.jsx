@@ -1,4 +1,4 @@
-import { Box, CardActions, Drawer, IconButton, List, ListItem, ListItemText } from "@mui/material"
+import { Box, CardActions, Drawer, IconButton, List, ListItem, ListItemText, Link, ListItemButton } from "@mui/material"
 import { ThemeToggleBtn } from "./ThemeToggleBtn"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -33,10 +33,12 @@ export const NavBarMobile = ({ navItems }) => {
                             </CardActions>
                             <List sx={{ display: 'flex', flexDirection: 'column', height: '70%', justifyContent: 'space-around' }}>
                                 {navItems.map((item) => (
-                                    <ListItem key={item} onClick={ handleDrawerClose } sx={{ textAlign: 'center' }}>
-                                        <ListItemText
-                                        primaryTypographyProps={{fontSize: '40px'}} 
-                                        >{item}</ListItemText>
+                                    <ListItem key={item} onClick={ handleDrawerClose } sx={{ justifyContent: 'center'  }}>
+                                        <Link underline='none' color='inherit' sx={{ cursor: 'pointer' }} href={`#${item.toLowerCase()}`}>
+                                                <ListItemText
+                                                    primaryTypographyProps={{fontSize: '40px'}} 
+                                                >{item}</ListItemText>
+                                        </Link>
                                     </ListItem>
                                 ))}
                             </List>
