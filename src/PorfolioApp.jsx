@@ -1,7 +1,7 @@
 
 import { Box } from "@mui/material";
 import { NavBar, ScrollToTopButton } from "./components";
-import { AboutPage, HomePage } from "./pages";
+import { AboutPage, HomePage, ProjectsPage, ContactPage } from "./pages";
 import { ParticlesBackground } from "./particles/ParticlesBackground";
 
 
@@ -15,6 +15,8 @@ export const PorfolioApp = () => {
                 <NavBar />
                 <HomePage />
                 <AboutPage />
+                <ProjectsPage />
+                <ContactPage />
             </Box>
         </>
     )
