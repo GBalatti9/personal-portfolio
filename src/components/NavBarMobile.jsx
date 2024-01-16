@@ -4,9 +4,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 import { useState } from "react";
+import { useTheme } from "@emotion/react";
 
 
 export const NavBarMobile = ({ navItems }) => {
+
+    const theme = useTheme();
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -24,8 +27,8 @@ export const NavBarMobile = ({ navItems }) => {
                         <MenuIcon sx={{ fontSize: '2rem' }}/>
                     </IconButton>
 
-                    <Drawer anchor="right" open={isDrawerOpen} sx={{ opacity: '0.9' }}>
-                        <Box sx={{ width: '100vw', height: '100%', backgroundColor: 'black' }}>
+                    <Drawer anchor="right" open={isDrawerOpen} sx={{ opacity: '0.95' }}>
+                        <Box sx={{ width: '100vw', height: '100%', backgroundColor: theme.palette.primary.main }}>
                             <CardActions sx={{ justifyContent: 'flex-end' }}>
                                 <IconButton onClick={handleDrawerClose} >
                                     <CloseIcon sx={{ fontSize: '3rem' }}/>
