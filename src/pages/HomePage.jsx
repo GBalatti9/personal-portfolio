@@ -4,8 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Typewriter } from "react-simple-typewriter";
+import { useTheme } from "@emotion/react";
 
 export const HomePage = () => {
+    const theme = useTheme();
 
     const icons = [ 
     { icon: <GitHubIcon />, link: 'https://github.com/GBalatti9' }, 
@@ -35,7 +37,15 @@ export const HomePage = () => {
                 <Box sx={{ width: '50%', display: 'flex', justifyContent: 'space-around', alignItems: 'center', mx: 'auto', mt: 1 }}>
                     {
                         icons.map(( icon, i ) => (
-                            <Link key={ i } color="inherit" href={ icon.link } target="_blank" sx={{ '&:hover': { color: 'orange' } }} >
+                            <Link 
+                                key = { i } 
+                                color = "inherit" 
+                                href = { icon.link } 
+                                target = "_blank" 
+                                sx = {{ 
+                                    '&:hover': 
+                                    { color: theme.palette.primary.main } 
+                                    }} >
                                 { icon.icon }
                             </Link>
                         ))
