@@ -1,5 +1,8 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from "@mui/material"
 
-export const theme = createTheme({
-    
-})
+export const themeCreator = ( mode ) => {
+    return createTheme({
+        palette: {
+            mode,
+        },
+    })}
