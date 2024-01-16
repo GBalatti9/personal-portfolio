@@ -5,6 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Typewriter } from "react-simple-typewriter";
 import { useTheme } from "@emotion/react";
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
     const theme = useTheme();
