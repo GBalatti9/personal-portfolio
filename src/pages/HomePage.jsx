@@ -17,7 +17,7 @@ export const HomePage = () => {
 ]
 
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
             <Avatar
                 alt="Gaston Balatti"
                 src="/GastonCvImage.jpg"
