@@ -9,7 +9,7 @@ export const Skills = () => {
     return (
         <>
         <Typography variant='h3' sx={{ textAlign: 'center', textDecoration: 'underline', mb: 2 }}> Skills </Typography>
-            <Box sx={{ width: '50%', mx:'auto' }}>
+            <Box sx={{ width: {xs: '90%', sm: '50%' }, mx:'auto' }}>
                 <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-around', mb: 4 }}>
                 <FontAwesomeIcon icon={faNodeJs} style={{ fontSize: '4em', color: 'green' }} />
                 <FontAwesomeIcon icon={faReact} style={{ fontSize: '4em', color: 'lightblue' }} />

@@ -50,15 +50,17 @@ export const ProjectsList = () => {
             {
                 projects.map((project) => (
                     <Link href={ project.link } color='inherit' target='_blank' sx={{ textDecoration: 'none'}} key={project.id}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}  }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', backgroundColor: `${ theme.palette.primary.main === '#ff9800' ? 'rgba(0, 0, 0, 0.8)' : 'rgba(201, 197, 199, 0.8)' }`, borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}  }}>
                             <Box sx={{ textAlign: 'center' }}>
                                 <Typography variant="h4"> {project.title} </Typography>
                                 <Typography variant="h6" color={theme.palette.primary.main}> {project.category} </Typography>
                             </Box>
 
                             <Box sx={{ mt: 2, display: {sm: 'flex'} }}>
-                                <Box sx={{ width: '100%', pl: 1 }}>
+                                <Box sx={{ width: '100%', pr: 2 }}>
+                                    <Box>
                                     {project.description}
+                                    </Box>
                                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                         <ListItem>
                                             <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />

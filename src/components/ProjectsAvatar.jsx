@@ -17,7 +17,7 @@ export const ProjectsAvatar = () => {
             {
                 smallProjects.map(( project ) => (
                     <Link color="inherit" sx={{ textDecoration: 'none' }} href={ project.link } target="_blank">
-                    <Box sx={{ backgroundColor: `${ theme.palette.primary.main === '#ff9800' ? 'rgba(0, 0, 0, 0.8)' : '#fffff' }`, p: 2, borderRadius: '5px', '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}, mb: 2, width: { xs: '80%', sm: '100%' }, mx: 'auto' }} >
+                    <Box sx={{ backgroundColor: `${ theme.palette.primary.main === '#ff9800' ? 'rgba(0, 0, 0, 0.8)' : 'rgba(201, 197, 199, 0.8)' }`, p: 2, borderRadius: '5px', '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}, mb: 2, width: { xs: '80%', sm: '100%' }, mx: 'auto' }} >
                         <Typography variant="h5" sx={{ textAlign: 'center' }}>{ project.title }</Typography>
                         <Typography variant="h6" sx={{ mb: 2, textAlign: 'center', color: theme.palette.primary.main }}>{ project.category }</Typography>
                         <Box sx={{ width: '200px', mx: 'auto' }}>
