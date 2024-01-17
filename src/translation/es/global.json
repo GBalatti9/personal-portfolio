@@ -17,5 +17,30 @@
     "cool": "¡Construyamos grandes cosas juntos! ",
     "reachOut": "No dudes en contactarme y creemos algo increíble.",
     "projectsTitle": "Proyectos",
-    "contactTitle": "Contacto"
+    "contactTitle": "Contacto",
+    "projectsListComponent": {
+        "1": {
+            "title": "Argentina Campeón del Mundo 2022",
+            "category": "Proyecto Full-stack",
+            "description": "Esta es una página que muestra información detallada sobre los jugadores y el personal de la Selección Argentina de Fútbol. Combina un bonito diseño front-end y un robusto sistema de inicio de sesión y registro backend con una combinación de cookies y localStorage para brindarle al usuario una mejor experiencia.",
+            "frontEnd": "Diseño Front-end",
+            "backEnd": "Arquitectura Back-end"
+        },
+        "2": {
+            "title": "Landing Page Inmobiliaria",
+            "category": "Proyecto Front-end",
+            "description": "Esta es una landing para una agencia inmobiliaria creada con React y Node. Su objetivo principal es capturar clientes potenciales, y tanto el frontend como el backend se implementan en onrender.",
+            "frontEnd": "Diseño Front-end",
+            "backEnd": "Arquitectura Back-end",
+            "googleSheets": "El proyecto utiliza la API de Google para almacenar información de clientes potenciales en un documento de Google Sheets."
+        },
+        "3": {
+            "title": "Acortador de links",
+            "category": "Proyecto Back-end",
+            "description": "Este es un proyecto que utiliza Node.js, Express, Sequelize y MySQL. Los usuarios pueden ingresar una URL larga a través de un formulario y recibir a cambio una 'nueva URL', que actúa como enlace abreviado. También integra Express Validator, sigue el patrón MVC y utiliza bibliotecas shortId y bcrypt.",
+            "frontEnd": "Diseño Front-end",
+            "backEnd": "Arquitectura Back-end"
+        }
+    },
+    "skills": "Habilidades"
 }

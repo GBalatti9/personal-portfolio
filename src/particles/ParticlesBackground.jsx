@@ -7,7 +7,6 @@ import { useEffect, useMemo, useState } from "react";
 export const ParticlesBackground = () => {
 
     const theme = useTheme();
-    console.log(theme.palette.primary.main);
 
     const [init, setInit] = useState(false);
 

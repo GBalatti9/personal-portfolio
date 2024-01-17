@@ -4,7 +4,6 @@ import { Box, Link, Typography } from "@mui/material"
 
 export const ProjectAvatarComponent = ({ link, category, img, title }) => {
     const theme = useTheme();
-    console.log(theme.palette.primary.main);
     return (
         <Link color="inherit" sx={{ textDecoration: 'none' }} href={ link } target="_blank">
                 <Box sx={{ backgroundColor: `${ theme.palette.primary.main === '#ff9800' ? 'rgba(0, 0, 0, 0.8)' : 'rgba(201, 197, 199, 0.8)' }`, p: 2, borderRadius: '5px', '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}, mb: 2, width: { xs: '80%', sm: '100%' }, mx: 'auto' }} >

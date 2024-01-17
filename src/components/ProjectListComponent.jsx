@@ -1,11 +1,12 @@
 import { useTheme } from "@emotion/react";
 import { Box, IconButton, Link, List, ListItem, ListItemText, Typography } from "@mui/material";
 import CircleIcon from '@mui/icons-material/Circle';
+import { useTranslation } from "react-i18next";
 
-
-export const ProjectListComponent = ({ link, title, description, category, frontEndDesign, backEndArchitecture, relationalDataBase, orm, googleSheets, img }) => {
-
-    const theme = useTheme();;
+export const ProjectListComponent = ({ title, link, description, category, frontEndDesign, backEndArchitecture, relationalDataBase, orm, googleSheets, img, frontEnd, backEnd }) => {
+    console.log(googleSheets);
+    const theme = useTheme();
+    console.log(description);
 
     return (
         <Link href={ link } color='inherit' target='_blank' sx={{ textDecoration: 'none' }} >
@@ -23,13 +24,13 @@ export const ProjectListComponent = ({ link, title, description, category, front
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <ListItem>
                                 <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
-                                <Typography variant="body1">Front-end design: { frontEndDesign }</Typography>
+                                <Typography variant="body1">{ frontEnd }: { frontEndDesign }</Typography>
                             </ListItem>
                             {
                                 backEndArchitecture &&
                                 <ListItem>
                                     <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
-                                    <Typography variant="body1">Backend-end architecture: { backEndArchitecture }</Typography>
+                                    <Typography variant="body1">{ backEnd }: { backEndArchitecture }</Typography>
                                 </ListItem>
                             }
                             {
@@ -47,7 +48,7 @@ export const ProjectListComponent = ({ link, title, description, category, front
                                 </ListItem>
                             }
                             {
-                                googleSheets &&
+                                googleSheets !== 'projectsListComponent.1.googleSheets' &&
                                 <ListItem>
                                     <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
                                     <Typography variant="body1">{ googleSheets }</Typography>
