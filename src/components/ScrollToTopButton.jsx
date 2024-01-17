@@ -33,7 +33,7 @@ export const ScrollToTopButton = () => {
             variant="contained"
             startIcon={<KeyboardArrowUp />}
             onClick={ scrollToTop }
-            sx={{ display: isVisible ? 'flex' : 'none', width: 'fit-content', position: 'fixed', bottom: '50px', right: '50px' }}>
+            sx={{ display: isVisible ? 'flex' : 'none', width: 'fit-content', position: 'fixed', bottom: '50px', right: '50px', zIndex: 10 }}>
             Scroll To Top
         </Button>
     )
