@@ -51,9 +51,9 @@ export const ProjectsList = () => {
                 projects.map((project) => (
                     <Link href={ project.link } color='inherit' target='_blank' sx={{ textDecoration: 'none'}} key={project.id}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}  }}>
-                            <Box sx={{ mx: 'auto' }}>
+                            <Box sx={{ textAlign: 'center' }}>
                                 <Typography variant="h4"> {project.title} </Typography>
-                                <Typography variant="h6" color={theme.palette.primary.main} sx={{ textAlign: 'center' }}> {project.category} </Typography>
+                                <Typography variant="h6" color={theme.palette.primary.main}> {project.category} </Typography>
                             </Box>
 
                             <Box sx={{ mt: 2, display: {sm: 'flex'} }}>
