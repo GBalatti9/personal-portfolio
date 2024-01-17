@@ -10,14 +10,14 @@ const projects = [
         backEndArchitecture: 'Node',
         relationalDataBase: 'MySQL',
         orm: 'Sequelize',
-        link: 'https://github.com/GBalatti9/argentina-world-cup',
+        link: 'https://argentina-world-cup.onrender.com/players',
         img: '/projects/ArgentinaProject.png',
     },
     {
         id: '2',
         frontEndDesign: 'React',
         backEndArchitecture: 'Node',
-        link: 'https://github.com/GBalatti9/ek-landing-page',
+        link: 'https://landing-page-ek-front.onrender.com/',
         img: '/projects/LandingEK.png',
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         backEndArchitecture: 'Node',
         relationalDataBase: 'MySQL',
         orm: 'Sequelize',
-        link: 'https://github.com/GBalatti9/short_url_project?tab=readme-ov-file',
+        link: 'https://shorturl-r33a.onrender.com/',
         img: '/projects/ShortURL.png'
     },
 ]
