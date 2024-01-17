@@ -44,5 +44,20 @@
             "dataBase": "MySQL"
         }
     },
-    "skills": "Skills"
+    "skills": "Skills",
+    "chat": "Let's chat!",
+    "smallProjectsList": {
+        "1": {
+            "title": "Band Home Page",
+            "category": "Front-end project"
+        },
+        "2": {
+            "title": "Ecommerce",
+            "category": "Full-stack project"
+        },
+        "3": {
+            "title": "Stocks",
+            "category": "Back-end project"
+        }
+    }
 }

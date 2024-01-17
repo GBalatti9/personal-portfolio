@@ -42,5 +42,20 @@
             "backEnd": "Arquitectura Back-end"
         }
     },
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "chat": "¡Hablemos!",
+    "smallProjectsList": {
+        "1": {
+            "title": "Landing para banda",
+            "category": "Proyecto Front-end"
+        },
+        "2": {
+            "title": "Ecommerce",
+            "category": "Proyecto Full-stack"
+        },
+        "3": {
+            "title": "Stocks",
+            "category": "Proyecto Back-end"
+        }
+    }
 }
