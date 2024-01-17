@@ -4,6 +4,7 @@ import { PorfolioApp } from './PorfolioApp.jsx';
 import { ColorProvider } from './theme/context/ColorProvider.jsx';
 
 import './index.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 import i18next from './translation/i18n.js';
 import { I18nextProvider } from 'react-i18next';
