@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next"
-import { ProjectsList } from "../components";
+import { ProjectsAvatar, ProjectsList } from "../components";
 
 
 export const ProjectsPage = () => {
@@ -9,6 +9,7 @@ export const ProjectsPage = () => {
         <Box sx={{ width: { xs: '100%', md: '60%' }, mx: 'auto', mb: 4 }} id='projects'>
             <Typography variant='h3' sx={{ textAlign: 'center', textDecoration: 'underline', mb: 4 }}> { t('projectsTitle') } </Typography>
             <ProjectsList />
+            <ProjectsAvatar />
         </Box>
 
     )

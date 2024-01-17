@@ -49,12 +49,11 @@ export const ProjectsList = () => {
         <List>
             {
                 projects.map((project) => (
-                    <Link href={ project.link } color='inherit' target='_blank' sx={{ textDecoration: 'none' }}>
-                    <ListItem sx={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}` } }} key={project.id}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                    <Link href={ project.link } color='inherit' target='_blank' sx={{ textDecoration: 'none'}} key={project.id}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}`}  }}>
                             <Box sx={{ mx: 'auto' }}>
                                 <Typography variant="h4"> {project.title} </Typography>
-                                <Typography variant="h6" color={theme.palette.primary.main}> {project.category} </Typography>
+                                <Typography variant="h6" color={theme.palette.primary.main} sx={{ textAlign: 'center' }}> {project.category} </Typography>
                             </Box>
 
                             <Box sx={{ mt: 2, display: {sm: 'flex'} }}>
@@ -102,7 +101,6 @@ export const ProjectsList = () => {
                                 </Box>
                             </Box>
                         </Box>
-                    </ListItem>
                     </Link>
                 ))
             }
