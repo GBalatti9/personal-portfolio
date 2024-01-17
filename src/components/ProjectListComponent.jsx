@@ -1,0 +1,67 @@
+import { useTheme } from "@emotion/react";
+import { Box, IconButton, Link, List, ListItem, ListItemText, Typography } from "@mui/material";
+import CircleIcon from '@mui/icons-material/Circle';
+
+
+export const ProjectListComponent = ({ link, title, description, category, frontEndDesign, backEndArchitecture, relationalDataBase, orm, googleSheets, img }) => {
+
+    const theme = useTheme();;
+
+    return (
+        <Link href={ link } color='inherit' target='_blank' sx={{ textDecoration: 'none' }} >
+            <Box sx={{ display: 'flex', flexDirection: 'column', backgroundColor: `${theme.palette.primary.main === '#ff9800' ? 'rgba(0, 0, 0, 0.8)' : 'rgba(201, 197, 199, 0.8)'}`, borderRadius: '5px', mb: 2, p: 3, '&:hover': { boxShadow: `0px 0px 2px ${theme.palette.primary.main}` } }}>
+                <Box sx={{ textAlign: 'center' }}>
+                    <Typography variant="h4"> { title } </Typography>
+                    <Typography variant="h6" color={theme.palette.primary.main}> { category } </Typography>
+                </Box>
+
+                <Box sx={{ mt: 2, display: { sm: 'flex' } }}>
+                    <Box sx={{ width: '100%', pr: 2 }}>
+                        <Box>
+                            { description }
+                        </Box>
+                        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                            <ListItem>
+                                <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
+                                <Typography variant="body1">Front-end design: { frontEndDesign }</Typography>
+                            </ListItem>
+                            {
+                                backEndArchitecture &&
+                                <ListItem>
+                                    <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
+                                    <Typography variant="body1">Backend-end architecture: { backEndArchitecture }</Typography>
+                                </ListItem>
+                            }
+                            {
+                                relationalDataBase &&
+                                <ListItem>
+                                    <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
+                                    <Typography variant="body1">Relational Database: { relationalDataBase }</Typography>
+                                </ListItem>
+                            }
+                            {
+                                orm &&
+                                <ListItem>
+                                    <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
+                                    <Typography variant="body1">ORM: { orm }</Typography>
+                                </ListItem>
+                            }
+                            {
+                                googleSheets &&
+                                <ListItem>
+                                    <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
+                                    <Typography variant="body1">{ googleSheets }</Typography>
+                                </ListItem>
+                            }
+                        </Box>
+                    </Box>
+
+
+                    <Box sx={{ width: '100%', height: '210px' }}>
+                        <img src={ img } style={{ width: '100%', height: '100%' }} />
+                    </Box>
+                </Box>
+            </Box>
+        </Link>
+    )
+}
