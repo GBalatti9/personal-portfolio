@@ -58,6 +58,10 @@
         "3": {
             "title": "Stocks",
             "category": "Back-end project"
+        },
+        "4": {
+            "title": "Jason Tell Me Yes",
+            "category": "Front-end project"
         }
     }
 }

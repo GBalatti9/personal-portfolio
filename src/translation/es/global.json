@@ -56,6 +56,10 @@
         "3": {
             "title": "Stocks",
             "category": "Proyecto Back-end"
+        },
+        "4": {
+            "title": "Jason Dime Que Sí",
+            "category": "Proyecto Front-end"
         }
     }
 }

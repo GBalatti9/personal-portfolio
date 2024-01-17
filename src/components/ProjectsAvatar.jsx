@@ -7,6 +7,7 @@ const smallProjects = [
     { id: 1,  img: '/projects/TragoAmargo.png', link: 'https://trago-amargo.onrender.com/' },
     { id: 2,  img: '/projects/Ecommerce.png', link: 'https://github.com/LCanasE/grupo_10_Eventicket' },
     { id: 3,  img: '/projects/Stocks.png', link: 'https://arg-stocks.onrender.com/' },
+    { id: 4,  img: '/projects/Jason.png', link: 'https://www.jasondimequesi.com.ar/' },
 ]
 
 export const ProjectsAvatar = () => {
