@@ -13,8 +13,9 @@ const smallProjects = [
 export const ProjectsAvatar = () => {
 
     const { t } = useTranslation();
+    
     return (
-        <Box sx={{ display: { sm: 'flex' }, justifyContent: 'space-around', }}>
+        <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2 }}>
             {
                 smallProjects.map(( project ) => (
                     <ProjectAvatarComponent key={ project.id } 
