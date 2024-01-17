@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
+import { LanguageToggleBtn } from "./LanguageToggleBtn";
 
 
 export const NavBarMobile = ({ navItems }) => {
@@ -22,7 +23,8 @@ export const NavBarMobile = ({ navItems }) => {
     };
     return (
         <>
-            <ThemeToggleBtn/>
+            <ThemeToggleBtn />
+            <LanguageToggleBtn />
                     <IconButton onClick={ handleDrawerOpen }>
                         <MenuIcon sx={{ fontSize: '2rem' }}/>
                     </IconButton>

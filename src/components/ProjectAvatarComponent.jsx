@@ -10,7 +10,7 @@ export const ProjectAvatarComponent = ({ link, category, img, title }) => {
                 <Typography variant="h5" sx={{ textAlign: 'center' }}>{ title }</Typography>
                 <Typography variant="h6" sx={{ mb: 2, textAlign: 'center', color: theme.palette.primary.main }}>{ category }</Typography>
                 <Box sx={{ width: '200px', mx: 'auto' }}>
-                    <img src={ img } alt="" style={{ width: '100%', height: '100%' }} />
+                    <img src={ img } alt={ title } style={{ width: '100%', height: '100%' }} />
                 </Box>
             </Box>
         </Link>
