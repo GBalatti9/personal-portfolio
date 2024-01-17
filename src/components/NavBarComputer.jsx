@@ -1,11 +1,12 @@
 import { Box, Button, Link, List, ListItem, ListItemButton, ListItemText } from "@mui/material"
 import { ThemeToggleBtn } from "./ThemeToggleBtn"
 import { useTranslation } from "react-i18next"
+import { LanguageToggleBtn } from "./LanguageToggleBtn";
 
 
 export const NavBarComputer = ({ navItems }) => {
 
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const handleDownloadPdf = () => {
         const cv = '/Gaston_Balatti__CV.pdf';
@@ -15,11 +16,6 @@ export const NavBarComputer = ({ navItems }) => {
         link.download = 'Gaston_Balatti__CV.pdf';
         link.click();
         console.log('download');
-    }
-
-    const toggleLanguage = ( actualLanguage ) => {
-        const newLanguage = actualLanguage === 'en' ? 'es' : 'en';
-        i18n.changeLanguage(newLanguage);
     }
 
     return (
@@ -46,7 +42,7 @@ export const NavBarComputer = ({ navItems }) => {
                         { t('downloadCV') }
                     </Button>
                         <ThemeToggleBtn />
-                        <Button onClick={ () => toggleLanguage(i18n.language) }>{ i18n.language === 'en' ? 'ES' : 'EN' }</Button>
+                        <LanguageToggleBtn />
                     </Box>
         </List>
     )
