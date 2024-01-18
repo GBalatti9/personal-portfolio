@@ -48,7 +48,7 @@ export const ProjectListComponent = ({ title, link, description, category, front
                                 </ListItem>
                             }
                             {
-                                googleSheets !== 'projectsListComponent.1.googleSheets' &&
+                                googleSheets !== 'projectsListComponent.1.googleSheets' && googleSheets !== 'projectsListComponent.3.googleSheets' &&
                                 <ListItem>
                                     <CircleIcon sx={{ fontSize: 'small', mr: 2 }} />
                                     <Typography variant="body1">{ googleSheets }</Typography>
