@@ -10,7 +10,7 @@ const projects = [
         backEndArchitecture: 'Node',
         relationalDataBase: 'MySQL',
         orm: 'Sequelize',
-        link: 'https://argentina-world-cup.onrender.com/players',
+        link: 'https://argentina-world-cup-7l3d.vercel.app/',
         img: '/projects/ArgentinaProject.png',
     },
     {
